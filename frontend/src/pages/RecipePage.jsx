@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { CiSaveDown2 } from "react-icons/ci";
 
 const RecipePage = () => {
+  
   return (
     <section className="p-4 sm:ml-64 sm:mr-80 font-schisted">
       <div className="">
@@ -23,7 +24,7 @@ const RecipePage = () => {
               </div>
               <div className="flex  text-xs items-center text-gray-500">
                 <GoDotFill className=" " />
-                <span>2 days ago</span>
+                <span>{el.created_at}</span>
               </div>
               <div className="flex text-xs  items-center text-gray-500">
                 <GoDotFill className=" " />
@@ -37,17 +38,16 @@ const RecipePage = () => {
               <p>{el.title}</p>
             </div>
 
-            <div className="text-gray-800 text-sm mb-5">
-              {
-                el.description
-              }
-            </div>
+            <div className="text-gray-800 text-sm mb-5">{el.description}</div>
 
             <div className="flex gap-4 overflow-scroll ">
               {el.ingredients.map((ingredient, index) => (
-                <div className="flex items-center text-gray-800  flex-row gap-1 px-4 py-2 border shadow-sm text-xs rounded-full text-nowrap mb-5">
-                  <span>{ingredient}</span>
-                </div>
+                <p
+                  key={index}
+                  className="text-sm text-nowrap border border-gray-300 mb-5 rounded-full px-3 py-1 text-gray-700"
+                >
+                  {ingredient.name}{" "}
+                </p>
               ))}
             </div>
 
@@ -72,10 +72,10 @@ const RecipePage = () => {
               <div className="flex gap-5 items-center">
                 <button
                   type="button"
-                  className=" flex items-center gap-2 text-orange bg-orange-50 hover:bg-secOrange focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full  px-4 py-1.5 text-center dark:bg-orange-100 dark:hover:bg-orange dark:focus:ring-sebg-secOrange"
+                  className=" flex items-center gap-2 text-orange bg-orange-50 hover:shadow-sm focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full  px-4 py-1.5 text-center dark:bg-orange-100 dark:hover:bg-orange dark:focus:ring-sebg-secOrange"
                 >
                   <CiSaveDown2 className="size-5" />
-                  Save
+                  Calculate calories
                 </button>
               </div>
             </div>

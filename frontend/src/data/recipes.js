@@ -1,131 +1,155 @@
 const recipes = [
-    {
-      id: 1,
-      title: "Spicy Thai Tom Yum Soup with Shrimp",
-      description: "A tangy, spicy, and aromatic Thai soup that brings warmth and flavor to your table.",
-      owner: "Chef Aree",
-      ingredients: [
-        "500 ml water or chicken broth",
-        "200 g shrimp (peeled and deveined)",
-        "1 stalk lemongrass (smashed)",
-        "3 kaffir lime leaves (torn)",
-        "2 slices galangal (or ginger)",
-        "2 Thai chilies (smashed)",
-        "100 g mushrooms (halved)",
-        "2 tbsp fish sauce",
-        "1 tbsp lime juice",
-        "1 tsp sugar",
-        "2 tbsp Thai chili paste (Nam Prik Pao)",
-        "Fresh coriander for garnish"
-      ],
-      steps: [
-        "Bring broth to a boil with lemongrass, lime leaves, galangal, and chilies.",
-        "Add mushrooms and simmer for 2 minutes.",
-        "Add shrimp, cook until pink (about 3 minutes).",
-        "Stir in fish sauce, chili paste, sugar. Remove from heat.",
-        "Add lime juice. Garnish with coriander before serving."
-      ]
-    },
-    {
-      id: 2,
-      title: "Crisp Mediterranean Chickpea Salad",
-      description: "A refreshing salad packed with protein, crunch, and Mediterranean flavor—perfect for light meals or sides.",
-      owner: "Nadia Vega",
-      ingredients: [
-        "1 can (400g) chickpeas, rinsed",
-        "1 cucumber, diced",
-        "1 red bell pepper, chopped",
-        "1/2 red onion, chopped",
-        "100 g cherry tomatoes, halved",
-        "50 g feta cheese, crumbled",
-        "2 tbsp olive oil",
-        "1 tbsp red wine vinegar",
-        "1 tsp dried oregano",
-        "Salt and pepper",
-        "Fresh parsley, chopped"
-      ],
-      steps: [
-        "Mix chickpeas, cucumber, bell pepper, onion, and tomatoes.",
-        "Whisk olive oil, vinegar, oregano, salt, and pepper.",
-        "Pour dressing over the salad and toss gently.",
-        "Top with feta and parsley. Serve chilled."
-      ]
-    },
-    {
-      id: 3,
-      title: "Creamy Coconut Chicken Curry",
-      description: "A rich and comforting curry with tender chicken, simmered in spiced coconut gravy—perfect with rice or naan.",
-      owner: "David Lin",
-      ingredients: [
-        "500 g chicken thighs, cut into chunks",
-        "1 onion, chopped",
-        "3 garlic cloves, minced",
-        "1 tbsp ginger, grated",
-        "1 tbsp curry powder",
-        "1/2 tsp turmeric",
-        "1/2 tsp chili powder (optional)",
-        "1 can (400 ml) coconut milk",
-        "1 tbsp tomato paste",
-        "2 tbsp oil",
-        "Salt",
-        "Fresh coriander"
-      ],
-      steps: [
-        "Heat oil and sauté onion until golden.",
-        "Add garlic, ginger, and spices. Cook for 1 minute.",
-        "Add chicken and brown it.",
-        "Add tomato paste and coconut milk. Simmer 15–20 minutes.",
-        "Season with salt and garnish with coriander."
-      ]
-    },
-    {
-      id: 4,
-      title: "Garlic Butter Herb Roasted Potatoes",
-      description: "Crispy on the outside, soft on the inside, these roasted potatoes are packed with garlic and herb flavor.",
-      owner: "Elena Rios",
-      ingredients: [
-        "500 g baby potatoes, halved",
-        "2 tbsp olive oil",
-        "2 tbsp butter, melted",
-        "3 cloves garlic, minced",
-        "1 tsp dried rosemary",
-        "1 tsp thyme",
-        "Salt and pepper",
-        "Fresh parsley"
-      ],
-      steps: [
-        "Preheat oven to 200°C (400°F).",
-        "Toss potatoes with oil, butter, garlic, rosemary, thyme, salt, and pepper.",
-        "Spread on a baking sheet. Roast for 30–35 minutes until golden.",
-        "Sprinkle with parsley and serve warm."
-      ]
-    },
-    {
-      id: 5,
-      title: "Classic Banana Pancakes",
-      description: "Fluffy, sweet, and naturally delicious banana pancakes for a perfect breakfast or brunch.",
-      owner: "Liam Parker",
-      ingredients: [
-        "1 ripe banana, mashed",
-        "1 cup all-purpose flour",
-        "2 tbsp sugar",
-        "1 tsp baking powder",
-        "1/2 tsp baking soda",
-        "Pinch of salt",
-        "1 cup milk",
-        "1 egg",
-        "2 tbsp melted butter",
-        "1/2 tsp vanilla extract"
-      ],
-      steps: [
-        "In a bowl, whisk flour, sugar, baking powder, baking soda, and salt.",
-        "In another bowl, combine mashed banana, milk, egg, butter, and vanilla.",
-        "Mix wet ingredients into dry ingredients until just combined.",
-        "Heat a pan and lightly grease it. Pour batter to form pancakes.",
-        "Cook until bubbles form, then flip and cook the other side. Serve warm with syrup."
-      ]
-    }
-  ];
-  
-  export default recipes;
-  
+  {
+    id: 1,
+    title: "Spicy Thai Tom Yum Soup with Shrimp",
+    description:
+      "A tangy, spicy, and aromatic Thai soup that brings warmth and flavor to your table.",
+    owner: "Chef Aree",
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    created_at: "2h ago",
+    ingredients: [
+      { name: "500 ml water or chicken broth", calories: 15 },
+      { name: "200 g shrimp (peeled and deveined)", calories: 170 },
+      { name: "1 stalk lemongrass (smashed)", calories: 5 },
+      { name: "3 kaffir lime leaves (torn)", calories: 1 },
+      { name: "2 slices galangal (or ginger)", calories: 2 },
+      { name: "2 Thai chilies (smashed)", calories: 5 },
+      { name: "100 g mushrooms (halved)", calories: 22 },
+      { name: "2 tbsp fish sauce", calories: 20 },
+      { name: "1 tbsp lime juice", calories: 4 },
+      { name: "1 tsp sugar", calories: 16 },
+      { name: "2 tbsp Thai chili paste (Nam Prik Pao)", calories: 50 },
+      { name: "Fresh coriander for garnish", calories: 1 },
+    ],
+    total_calories: 311,
+    steps: [
+      "Bring broth to a boil with lemongrass, lime leaves, galangal, and chilies.",
+      "Add mushrooms and simmer for 2 minutes.",
+      "Add shrimp, cook until pink (about 3 minutes).",
+      "Stir in fish sauce, chili paste, sugar. Remove from heat.",
+      "Add lime juice. Garnish with coriander before serving.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Crisp Mediterranean Chickpea Salad",
+    description:
+      "A refreshing salad packed with protein, crunch, and Mediterranean flavor—perfect for light meals or sides.",
+    owner: "Nadia Vega",
+    image:
+      "https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    created_at: "1 day ago",
+    ingredients: [
+      { name: "1 can (400g) chickpeas, rinsed", calories: 240 },
+      { name: "1 cucumber, diced", calories: 16 },
+      { name: "1 red bell pepper, chopped", calories: 31 },
+      { name: "1/2 red onion, chopped", calories: 22 },
+      { name: "100 g cherry tomatoes, halved", calories: 18 },
+      { name: "50 g feta cheese, crumbled", calories: 132 },
+      { name: "2 tbsp olive oil", calories: 238 },
+      { name: "1 tbsp red wine vinegar", calories: 3 },
+      { name: "1 tsp dried oregano", calories: 2 },
+      { name: "Salt and pepper", calories: 0 },
+      { name: "Fresh parsley, chopped", calories: 1 },
+    ],
+    total_calories: 703,
+    steps: [
+      "Mix chickpeas, cucumber, bell pepper, onion, and tomatoes.",
+      "Whisk olive oil, vinegar, oregano, salt, and pepper.",
+      "Pour dressing over the salad and toss gently.",
+      "Top with feta and parsley. Serve chilled.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Creamy Coconut Chicken Curry",
+    description:
+      "A rich and comforting curry with tender chicken, simmered in spiced coconut gravy—perfect with rice or naan.",
+    owner: "David Lin",
+    image:
+      "https://images.unsplash.com/photo-1459789034005-ba29c5783491?q=80&w=2138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    created_at: "3 days ago",
+    ingredients: [
+      { name: "500 g chicken thighs, cut into chunks", calories: 1100 },
+      { name: "1 onion, chopped", calories: 45 },
+      { name: "3 garlic cloves, minced", calories: 13 },
+      { name: "1 tbsp ginger, grated", calories: 5 },
+      { name: "1 tbsp curry powder", calories: 20 },
+      { name: "1/2 tsp turmeric", calories: 4 },
+      { name: "1/2 tsp chili powder", calories: 4 },
+      { name: "1 can (400 ml) coconut milk", calories: 445 },
+      { name: "1 tbsp tomato paste", calories: 13 },
+      { name: "2 tbsp oil", calories: 240 },
+      { name: "Salt", calories: 0 },
+      { name: "Fresh coriander", calories: 1 },
+    ],
+    total_calories: 1890,
+    steps: [
+      "Heat oil and sauté onion until golden.",
+      "Add garlic, ginger, and spices. Cook for 1 minute.",
+      "Add chicken and brown it.",
+      "Add tomato paste and coconut milk. Simmer 15–20 minutes.",
+      "Season with salt and garnish with coriander.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Garlic Butter Herb Roasted Potatoes",
+    description:
+      "Crispy on the outside, soft on the inside, these roasted potatoes are packed with garlic and herb flavor.",
+    owner: "Elena Rios",
+    image:
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    created_at: "4 days ago",
+    ingredients: [
+      { name: "500 g baby potatoes, halved", calories: 385 },
+      { name: "2 tbsp olive oil", calories: 238 },
+      { name: "2 tbsp butter, melted", calories: 204 },
+      { name: "3 cloves garlic, minced", calories: 13 },
+      { name: "1 tsp dried rosemary", calories: 2 },
+      { name: "1 tsp thyme", calories: 2 },
+      { name: "Salt and pepper", calories: 0 },
+      { name: "Fresh parsley", calories: 1 },
+    ],
+    total_calories: 845,
+    steps: [
+      "Preheat oven to 200°C (400°F).",
+      "Toss potatoes with oil, butter, garlic, rosemary, thyme, salt, and pepper.",
+      "Spread on a baking sheet. Roast for 30–35 minutes until golden.",
+      "Sprinkle with parsley and serve warm.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Classic Banana Pancakes",
+    description:
+      "Fluffy, sweet, and naturally delicious banana pancakes for a perfect breakfast or brunch.",
+    owner: "Liam Parker",
+    image:
+      "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    created_at: "5 days ago",
+    ingredients: [
+      { name: "1 ripe banana, mashed", calories: 105 },
+      { name: "1 cup all-purpose flour", calories: 455 },
+      { name: "2 tbsp sugar", calories: 96 },
+      { name: "1 tsp baking powder", calories: 2 },
+      { name: "1/2 tsp baking soda", calories: 1 },
+      { name: "Pinch of salt", calories: 0 },
+      { name: "1 cup milk", calories: 103 },
+      { name: "1 egg", calories: 70 },
+      { name: "2 tbsp melted butter", calories: 204 },
+      { name: "1/2 tsp vanilla extract", calories: 6 },
+    ],
+    total_calories: 1042,
+    steps: [
+      "In a bowl, whisk flour, sugar, baking powder, baking soda, and salt.",
+      "In another bowl, combine mashed banana, milk, egg, butter, and vanilla.",
+      "Mix wet ingredients into dry ingredients until just combined.",
+      "Heat a pan and lightly grease it. Pour batter to form pancakes.",
+      "Cook until bubbles form, then flip and cook the other side. Serve warm with syrup.",
+    ],
+  },
+];
+
+export default recipes;

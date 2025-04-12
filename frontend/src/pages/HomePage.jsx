@@ -16,8 +16,6 @@ const HomePage = () => {
 
   const navigate = useNavigate();
 
- 
-
   return (
     <section className="p-10 sm:ml-64 sm:mr-80 font-schisted">
       <div className="py-5 border-y border-gray-300">
@@ -35,11 +33,15 @@ const HomePage = () => {
             <span>Because you've shown interest in a similar community</span>
           </div>
         </div>
-        <p className="mb-5 text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
+        <p className="text-2xl font-medium text-gray-800 pb-4">
+        Meal Prepping Without the Boredom
+      </p>
+
+      <p className="text-sm font-medium text-gray-800 pb-4">
+      How do you plan your weekly meals without getting stuck in the chicken-and-rice rut? Share your tips, rotating themes, and flavor hacks to keep meal prep fresh, exciting, and sustainable.
+      </p>
         <img
-          src={examplePost}
+          src="https://images.unsplash.com/photo-1581184953987-5668072c8420?q=80&w=2125&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="rounded-xl aspect-square object-cover"
           alt=""
         />
