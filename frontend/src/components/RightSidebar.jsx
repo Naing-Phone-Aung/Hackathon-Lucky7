@@ -257,15 +257,15 @@ const RightSidebar = () => {
 
         {showSidebar2 && (
           <ul className="mt-12 text-gray-800">
-            <li>
-              <button
+            <Link to={"print-page"}>
+              <div
                 type="button"
-                className=" flex items-center gap-1 border border-gray-600 hover:shadow-sm  focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full  px-3 py-1 text-center dark:bg-secOrange dark:hover:bg-orange dark:focus:ring-sebg-secOrange"
+                className=" flex w-fit items-center gap-1 border border-gray-600 hover:shadow-sm  focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full  px-3 py-1 text-center dark:bg-secOrange dark:hover:bg-orange dark:focus:ring-sebg-secOrange"
               >
                 <IoAdd className="size-5" />
                 Shopping List
-              </button>
-            </li>
+              </div>
+            </Link>
             <li className="mt-3">
               <button
                 type="button"
