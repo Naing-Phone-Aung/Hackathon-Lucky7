@@ -8,6 +8,7 @@ import CreateCommunityPage from "../pages/CreateCommunityPage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 import CommunityDetailPage from "../pages/CommunityDetailPage";
+import PrintPage from "../pages/PrintPage";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
     path: "/register-page",
     element: <RegisterPage />,
   },
+  {
+    path: "/print-page",
+    element: <PrintPage />,
+  }
 ]);
 
 export default router;

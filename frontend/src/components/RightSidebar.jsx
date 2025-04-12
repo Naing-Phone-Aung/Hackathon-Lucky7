@@ -511,7 +511,7 @@ const RightSidebar = () => {
               </div>
             
             </li>
-              <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                 <li className="text-sm">
                   500 ml water or chicken broth — 15 kcal
                 </li>

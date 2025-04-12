@@ -14,7 +14,7 @@ const RecipePage = () => {
     <section className="p-4 sm:ml-64 sm:mr-80 font-schisted">
       <div className="">
         {recipes.map((el) => (
-          <div className="py-5 border-y border-gray-300">
+          <div key={el.id} className="py-5 border-y border-gray-300">
             <div className="flex mb-5 gap-3 items-center">
               <div className="flex items-center gap-2">
                 <Avvvatars value={el.owner} />
@@ -69,15 +69,15 @@ const RecipePage = () => {
                   <span className="px-2 font-medium">45</span>
                 </Link> */}
               </div>
-              <div className="flex gap-5 items-center">
+              <Link to={`/print-page`} className="flex gap-5 items-center">
                 <button
                   type="button"
                   className=" flex items-center gap-2 text-orange bg-orange-50 hover:shadow-sm focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full  px-4 py-1.5 text-center dark:bg-orange-100 dark:hover:bg-orange dark:focus:ring-sebg-secOrange"
                 >
                   <CiSaveDown2 className="size-5" />
-                  Calculate calories
+                  Print
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         ))}
