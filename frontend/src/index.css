@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import "../node_modules/preline/variants.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge, and Opera */
+}
+
+/* Optional: Prevent scrolling when scrollbar is hidden */
+body {
+  overflow: hidden; /* Disable scrolling */
+}
+
+/* If you want to allow scrolling but hide the scrollbar */
+body {
+  overflow: auto; /* Allow scrolling */
+}
+
+@theme {
+ --font-schisted: "Schibsted Grotesk", sans-serif;
+ --color-orange: #EE5737;
+ --color-secOrange: #C7452A;
+}
